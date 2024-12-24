@@ -12,7 +12,11 @@
 (function () {
   "use strict";
 
-  const notDisplaySelectorList = [];
+  const notDisplaySelectorList = [
+    `nav[role="navigation"]`,
+    `header[role="banner"]`,
+    "#layers",
+  ];
 
   const css = `
       ${notDisplaySelectorList.join(",")}{
